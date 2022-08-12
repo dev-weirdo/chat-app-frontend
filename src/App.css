@@ -67,11 +67,6 @@ body {
 #you {
   justify-content: flex-end;
 }
-
-#you .message-content {
-  justify-content: flex-start;
-}
-
 #you .message-meta {
   justify-content: flex-start;
   margin-left: 5px;
@@ -82,7 +77,6 @@ body {
 }
 
 #other .message-content {
-  justify-content: flex-end;
   background-color: white;
   color: black;
 }

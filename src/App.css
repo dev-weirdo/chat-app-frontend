@@ -1,57 +1,9 @@
-.App {
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  color: #212121;
-  font-family: "Open Sans", sans-serif;
-  display: grid;
-  place-items: center;
-}
 body {
   margin: 0%;
   padding: 0%;
 }
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
-
-.joinChatContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.joinChatContainer h3 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.joinChatContainer input {
-  width: 210px;
-  height: 40px;
-  margin: 7px;
-  border: 2px solid #43a047;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 16px;
-}
-
-.joinChatContainer button {
-  width: 225px;
-  height: 50px;
-  margin: 7px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 16px;
-  background: #43a047;
-  color: #fff;
-  cursor: pointer;
-}
-
-.joinChatContainer button:hover {
-  background: #2e7d32;
-}
-
 .chat-window {
-  width: 300px;
+  width: 350px;
   height: 420px;
 }
 
@@ -60,7 +12,8 @@ body {
 }
 .chat-window .chat-header {
   height: 45px;
-  border-radius: 6px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   background: #263238;
   position: relative;
   cursor: pointer;
@@ -76,8 +29,7 @@ body {
 .chat-window .chat-body {
   height: calc(450px - (45px + 70px));
   border: 1px solid #263238;
-  background: #fff;
-
+  background: bisque;
   position: relative;
 }
 .chat-window .chat-body .message-container {
@@ -101,21 +53,19 @@ body {
   height: auto;
   min-height: 40px;
   max-width: 120px;
-  background-color: #43a047;
+  background-color: #47B5FF;
   border-radius: 5px;
   color: white;
   display: flex;
   align-items: center;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
+  justify-content: center;
   overflow-wrap: break-word;
   word-break: break-word;
+  padding: 0 10px;
 }
 
 #you {
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 #you .message-content {
@@ -128,12 +78,13 @@ body {
 }
 
 #other {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #other .message-content {
   justify-content: flex-end;
-  background-color: cornflowerblue;
+  background-color: white;
+  color: black;
 }
 
 #other .message-meta {
@@ -165,9 +116,7 @@ body {
   padding: 0 0.7em;
   font-size: 1em;
   border-right: 1px dotted #607d8b;
-
   outline: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 .chat-window .chat-footer button {
@@ -183,8 +132,9 @@ body {
   color: lightgray;
 }
 
+
 .chat-window .chat-footer button:hover {
-  color: #43a047;
+  color: white;
 }
 .hide {
   opacity: 0 !important;
